@@ -1,0 +1,50 @@
+<! DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <title>Welcome to OpportUNITA</title>
+  <script>
+  function samePassword(){
+             const pass1 = document.getElementById("password");
+             const pass2 = document.getElementById("conf_password");
+             
+            if(pass1.value != pass2.value){
+               alert("Not the same password, repeat them");
+                
+               pass1.value = "";
+               pass2.value = "";
+
+               pass1.focus();
+
+               return (false);
+            }
+            return(true);
+          }
+    </script>
+
+</head>
+<body bgcolor="lightblue">
+  <center>
+    
+    <form action="procesar.php" method="POST" onsubmit="return samePassword()">
+    
+    <h3>Connect to your account</h3><br>
+    
+    <label for="name"><b>Name:</b></label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="surname"><b>Surname:</b></label><br>
+    <input type="text" id="surname" name="surname" required><br><br>
+
+    <label for="password"><b>Password:</b></label><br>
+    <input type="password" id="password" name="password" required><br><br> 
+    
+    <label for="conf_password"><b>Repeat your password:</b></label><br>
+    <input type="password" id="conf_password" name="conf_password" required><br><br>
+
+
+    <input type="submit" value="Conncet ">
+    </form>
+   </center>
+</body>
+</html>
