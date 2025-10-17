@@ -2,11 +2,11 @@
 
 google docs : https://docs.google.com/document/d/1bAQ1kkM4RHAxOD0iWRGZqMdbU_xJnlfEB1sAXB_jPjk/edit?usp=sharing
 
-Messages sur Redis :
-message:<id>-<id>
-  text
-  time
-  user
+Messages sur Redis :  
+message:<id>-<id>  
+  text  
+  time  
+  user  
 
 Architecture :  
 /root  
