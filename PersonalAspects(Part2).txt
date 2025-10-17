@@ -1,0 +1,40 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tell us about You</title>
+</head>
+<body bgcolor="lightblue">
+  <center>
+    <p>Make sure you complete all fields accurately according to our interests.</p>
+    
+    <form action="procesar.php" method="POST" enctype="multipart/form-data">
+
+   <label for="hobbies"><b>Hobbies:</b></label><br>
+   <select id="hobbies" name="hobbies[]" multiple size="5" required>
+            <option value="reading">Reading</option>
+            <option value="sports">Sports</option>
+            <option value="travell">Travelling</option>
+            <option value="cinema">Cinema</option>
+            <option value="videogames">Videogames</option>
+            <option value="music">Music</option>
+            <option value="photography">Photography</option>
+            <option value="theater">Theater</option>
+    </select><br>
+    <small>(Use trl/Cmd + clic in order to select some hobbies)</small><br>
+
+    <p>Then fill a brief description about you. Tell if you are a teacher, student or part of     
+       the staff</p>
+    <label for="description"><b>Description:</b></label><br>
+    <textarea type="text" id="description" name="description" rows="6" cols="60" required>
+    </textarea><br><br>
+
+    <p>Now we need you to put a profile foto</p>
+    <label for="profile_picture">Upload your <b>profile picture:</b></label><br>
+    <input type="file" id="profile_picture" name="profile_picture" accept="image/* required"><br><br>
+  
+    <input type="submit" value="Continue to password">
+    </form>
+   </center>
+</body>
+</html>
