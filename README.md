@@ -8,12 +8,12 @@ message:<id>-<id>
   time
   user
 
-Architecture :
-/root
-  index.php
-  message.php
-  tinder.php
-  inscription.php
-  /universityPictures
-    xx.jpg
+Architecture :  
+/root  
+  index.php  
+  message.php    
+  tinder.php    
+  inscription.php    
+  /universityPictures    
+    xx.jpg    
     
