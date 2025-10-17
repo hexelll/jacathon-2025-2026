@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>OpportUNITA</title>
+</head>
+<body bgcolor="lightblue">
+   <center>
+  <h1>Welcome to OpportUNITA</h1>
+  <p>Welcome to OpportUNITA, the social network were evryone have their place. 
+     If yo want to connect with people across the organization, this is your space!</p>
+  <p>Please register by filling in the form below.</p> 
+                
+
+  <form action="procesar.php" method="POST">
+
+  <label for="name"><b>Name:</b></label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="surname"><b>Surname:</b></label><br>
+  <input type="text" id="surname" name="surname" required><br><br>
+
+  <label for="birthdate"><b>Birthday:</b></label><br>
+  <input type="date" id="birthdate" name="birthdate" required><br><br>
+ 
+  <label for="university"><b>University:</b></label><br>
+  <select id="university" name="university" required>
+            <option value="">-- Select your University --</option>
+            <option value="zaragoza">University of Zaragoza</option>
+            <option value="navarra">University of Navarra</option>
+            <option value="torino">University of Torino</option>
+            <option value="brescia">University degli Studi di Brescia</option>
+            <option value="pau">University of Pau et des Pays de l'Adour</option>
+            <option value="savoie">University of Savoie Mont Blanc</option>
+            <option value="beira">University of Beira Interior</option>
+            <option value="guarda">Insitude Politecnico da Guarda</option>
+            <option value="brasov">University of Transilvania din Brasov</option>       
+   </select><br><br>
+  
+  <label for="disciplines"><b>Fieldes of study</b></label><br>
+  <select id="disciplines" name="disciplines[]" multiple size="5" required>
+        <option value="mathematics">Mathematics</option>
+        <option value="physics">Phisics</option>
+        <option value="Computer engineering">Computer Engineering</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="history">History</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="lenguages">Languages</option>
+        <option value="arts">Arts</option>
+        <option value="engineering">Engineering</option>
+        <option value="administration">Administration</option>
+  </select><br><br>
+  <small>(Use trl/Cmd + clic in order to select some hobbies)</small><br><br>
+
+
+   <input type="submit" value="Continue to register">
+   </form>
+  </center>
+</body>
+</html>
